@@ -1,7 +1,7 @@
 # Goal: To say Hello and tell the title / Name of repository
 
 # Start with naming your workflow
-name: Hello
+name: Hello Dosto
 
 # when the workflow runs
 on:
