@@ -21,3 +21,4 @@ jobs:
         secrets: inherit
         needs: [code,build-and-push]
         uses: ./.github/workflows/cd.yml
+        
