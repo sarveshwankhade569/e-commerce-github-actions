@@ -1,12 +1,13 @@
+# Goal: Push the scanned image to DockerHUb / ECR / GCR / GHCR / ACR
 # Goal: To build and push the docker images
 
-name: Docker Build & Push
+name: Docker Push
 
 on:
     workflow_call:
 
 jobs:
-    build-and-push:
+    docker-push:
         runs-on: ubuntu-latest
         steps:
             - name: Code Checkout
@@ -24,7 +25,7 @@ jobs:
             - name: Set up Docker Buildx
               uses: docker/setup-buildx-action@v4
             
-            - name: Build and push
+            - name: Docker push
               uses: docker/build-push-action@v7
               with:
                 push: true
